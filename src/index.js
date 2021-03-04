@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Hello from './Hello';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <h1>Hello World</h1>,
+  <Hello />,
   document.getElementById('root')
 );
 
