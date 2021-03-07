@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Hello from './Hello';
 // import App from './App';
+import 'tachyons';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
