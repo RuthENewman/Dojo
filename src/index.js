@@ -7,7 +7,7 @@ import 'tachyons';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Hello />,
+  <Hello greeting={'Welcome to Robot Friends'}/>,
   document.getElementById('root')
 );
 
