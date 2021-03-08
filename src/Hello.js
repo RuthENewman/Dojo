@@ -23,7 +23,7 @@ class Hello extends Component {
         return (
             <div className="f1 tc">
                 <h1>Hello {this.state.location}</h1>
-                <h2>{this.greeting}</h2>
+                <h2>{this.props.greeting}</h2>
             </div>
         );
     }
