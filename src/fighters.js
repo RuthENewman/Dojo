@@ -11,7 +11,7 @@ export const fighters = [
       id: 2,
       name: 'Daniel LaRusso',
       imageURL: 'https://media.giphy.com/media/Tgy115bI4bPoE24rSs/giphy.gif',
-      dojo: 'Miyagi-Do',
+      dojo: 'Miyagi Do',
       sensei: 'Mr Miyagi'
     },
     {
@@ -46,7 +46,7 @@ export const fighters = [
       id: 7,
       name: 'Demetri',
       imageURL: 'https://media.giphy.com/media/Tns21Z5UMxz9748cOM/giphy.gif',
-      dojo: 'Miyagi-Do',
+      dojo: 'Miyagi Do',
       sensei: 'Daniel LaRusso'
     },
     {
@@ -67,7 +67,7 @@ export const fighters = [
       id: 10,
       name: 'Chris',
       imageURL: 'https://media1.tenor.com/images/363f4679fc61ca8ee3a0a012e8d04f27/tenor.gif?itemid=18572907',
-      dojo: 'Miygai-Do',
+      dojo: 'Miygai Do',
       sensei: 'Daniel LaRusso'
     }
   ];

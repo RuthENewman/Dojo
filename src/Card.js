@@ -16,9 +16,9 @@ const Card = (props) => {
              className="active"
              />
             <div>
-                <h3>{name}</h3>
+                <h2>{name}</h2>
                 <p>{dojo}</p>
-                <p>Sensei: {sensei}</p>
+                <h4>Sensei: {sensei}</h4>
             </div>
         </div>
     );

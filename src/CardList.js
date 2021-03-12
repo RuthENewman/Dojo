@@ -12,6 +12,7 @@ const CardList = ({ fighters }) => {
     });
     return (
         <div>
+            <h1 className="tc">Welcome to the Dojo</h1>
             {cardComponent}
         </div>
     );

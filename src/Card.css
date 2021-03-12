@@ -6,3 +6,16 @@
   .static:hover {
     opacity:0;
   }
+
+  @font-face {
+    font-family: 'DeadStock';
+    src: url('DeadStock.ttf');
+  }
+
+ p, h1 {
+      font-family: 'DeadStock', 'Arial', 'serif';
+  }
+  
+p {
+    font-size: 1.5rem;
+}
