@@ -37,7 +37,7 @@ export const fighters = [
     },
     {
       id: 6,
-      name: 'Eli "Hawk Moskowitz',
+      name: 'Eli "Hawk" Moskowitz',
       imageURL: 'https://media.giphy.com/media/hoqydHKfMxeYs2tmCS/giphy.gif',
       dojo: 'Cobra Kai',
       sensei: 'Johnny Lawrence'
