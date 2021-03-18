@@ -14,16 +14,20 @@ class App extends Component {
         }
     }
 
-    onSearchChange(event) {
-        console.log(event.target.value)
+    onSearchChange = (event) => {
+        this.setState({ searchField: event.target.value });
     }
 
     render() {
+        const filteredFighters = this.state.fighters.filter((fighters) => {
+            return fighters.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+        });
+
         return (
             <div className="tc">
                 <h1 className="tc">Welcome to the Dojo</h1>
                 <SearchBox searchChange={this.onSearchChange}/>
-                <CardList fighters={this.state.fighters} />
+                <CardList fighters={filteredFighters} />
             </div>
         )
     }
