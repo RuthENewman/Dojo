@@ -12,11 +12,11 @@ class App extends Component {
             fighters: [],
             searchField: ''
         }
-        console.log('one');
+        console.log('construtor');
     }
 
     componentDidMount() {
-        console.log('two');
+        console.log('componentDidMount');
         this.setState({ fighters: fighters });
     }
 
@@ -28,7 +28,7 @@ class App extends Component {
         const filteredFighters = this.state.fighters.filter((fighters) => {
             return fighters.name.toLowerCase().includes(this.state.searchField.toLowerCase());
         });
-        console.log('three');
+        console.log('render');
         return (
             <div className="tc">
                 <h1 className="tc">Welcome to the Dojo</h1>
