@@ -12,11 +12,10 @@ class App extends Component {
             fighters: [],
             searchField: ''
         }
-        console.log('construtor');
     }
 
     componentDidMount() {
-        console.log('componentDidMount');
+        // TODO fetch from fighters API 
         this.setState({ fighters: fighters });
     }
 
