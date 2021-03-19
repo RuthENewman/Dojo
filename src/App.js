@@ -9,9 +9,15 @@ class App extends Component {
         super();
         
         this.state = {
-            fighters: fighters,
+            fighters: [],
             searchField: ''
         }
+        console.log('one');
+    }
+
+    componentDidMount() {
+        console.log('two');
+        this.setState({ fighters: fighters });
     }
 
     onSearchChange = (event) => {
@@ -22,7 +28,7 @@ class App extends Component {
         const filteredFighters = this.state.fighters.filter((fighters) => {
             return fighters.name.toLowerCase().includes(this.state.searchField.toLowerCase());
         });
-
+        console.log('three');
         return (
             <div className="tc">
                 <h1 className="tc">Welcome to the Dojo</h1>
