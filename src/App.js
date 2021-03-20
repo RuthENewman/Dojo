@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
+import NoFightersFound from './NoFightersFound';
 import { fighters } from './fighters';
 import { render } from '@testing-library/react';
 
@@ -27,7 +28,18 @@ class App extends Component {
         const filteredFighters = this.state.fighters.filter((fighters) => {
             return fighters.name.toLowerCase().includes(this.state.searchField.toLowerCase());
         });
-        console.log('render');
+        if (this.state.fighters.length === 0) {
+            return <h2>Loading...</h2>
+        }
+        if (filteredFighters.length === 0) {
+            return (
+                <div className="tc">
+                    <h1 className="tc">Welcome to the Dojo</h1>
+                    <SearchBox searchChange={this.onSearchChange}/>
+                    <NoFightersFound />
+                </div>
+            )
+        } else {
         return (
             <div className="tc">
                 <h1 className="tc">Welcome to the Dojo</h1>
@@ -35,6 +47,7 @@ class App extends Component {
                 <CardList fighters={filteredFighters} />
             </div>
         )
+        }
     }
 }
 

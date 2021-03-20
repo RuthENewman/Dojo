@@ -17,8 +17,8 @@ const Card = (props) => {
              />
             <div>
                 <h2>{name}</h2>
-                <p>{dojo}</p>
-                <h4>Sensei: {sensei}</h4>
+                <h2>{dojo}</h2>
+                <h3>Sensei: {sensei}</h3>
             </div>
         </div>
     );
