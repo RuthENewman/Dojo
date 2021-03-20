@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Header from './Header';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 import NoFightersFound from './NoFightersFound';
 import { fighters } from './fighters';
 import { render } from '@testing-library/react';
@@ -34,19 +36,21 @@ class App extends Component {
         if (filteredFighters.length === 0) {
             return (
                 <div className="tc">
-                    <h1 className="tc">Welcome to the Dojo</h1>
+                    <Header />
                     <SearchBox searchChange={this.onSearchChange}/>
                     <NoFightersFound />
                 </div>
             )
         } else {
-        return (
-            <div className="tc">
-                <h1 className="tc">Welcome to the Dojo</h1>
-                <SearchBox searchChange={this.onSearchChange}/>
-                <CardList fighters={filteredFighters} />
-            </div>
-        )
+            return (
+                <div className="tc">
+                    <Header />
+                    <SearchBox searchChange={this.onSearchChange}/>
+                <Scroll>
+                    <CardList fighters={filteredFighters} />
+                </Scroll>
+                </div>
+            )
         }
     }
 }
