@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
-import NoFightersFound from './NoFightersFound';
-import { fighters } from './fighters';
-import { render } from '@testing-library/react';
+import Header from '../components/Header';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
+import NoFightersFound from '../components/NoFightersFound';
+import { fighters } from '../fighters';
+import './App.css';
+// import { render } from '@testing-library/react';
+
 
 class App extends Component {
     constructor() {

@@ -1,13 +1,4 @@
-.static {
-    position:absolute;
-    background: white;
-  }
-  
-  .static:hover {
-    opacity:0;
-  }
-
-  @font-face {
+@font-face {
     font-family: 'DeadStock';
     src: url('DeadStock.ttf');
   }
