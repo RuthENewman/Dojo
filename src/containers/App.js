@@ -29,13 +29,14 @@ class App extends Component {
     }
 
     render() {
-        const filteredFighters = this.state.fighters.filter((fighters) => {
-            return fighters.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+        const { fighters, searchField } = this.state;
+        const filteredFighters = fighters.filter((fighter) => {
+            return fighter.name.toLowerCase().includes(searchField.toLowerCase());
         });
-        if (this.state.fighters.length === 0) {
+        if (!fighters.length) {
             return <h2>Loading...</h2>
         }
-        if (filteredFighters.length === 0) {
+        if (!filteredFighters.length) {
             return (
                 <div className="tc">
                     <Header />
