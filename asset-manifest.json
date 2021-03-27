@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dojo/static/css/main.61872e4e.chunk.css",
+    "main.js": "/dojo/static/js/main.69886d05.chunk.js",
+    "main.js.map": "/dojo/static/js/main.69886d05.chunk.js.map",
+    "runtime-main.js": "/dojo/static/js/runtime-main.7973ee9c.js",
+    "runtime-main.js.map": "/dojo/static/js/runtime-main.7973ee9c.js.map",
+    "static/css/2.31461e4f.chunk.css": "/dojo/static/css/2.31461e4f.chunk.css",
+    "static/js/2.72aabbd7.chunk.js": "/dojo/static/js/2.72aabbd7.chunk.js",
+    "static/js/2.72aabbd7.chunk.js.map": "/dojo/static/js/2.72aabbd7.chunk.js.map",
+    "static/js/3.37a19323.chunk.js": "/dojo/static/js/3.37a19323.chunk.js",
+    "static/js/3.37a19323.chunk.js.map": "/dojo/static/js/3.37a19323.chunk.js.map",
+    "index.html": "/dojo/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/dojo/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.61872e4e.chunk.css.map": "/dojo/static/css/main.61872e4e.chunk.css.map",
+    "static/js/2.72aabbd7.chunk.js.LICENSE.txt": "/dojo/static/js/2.72aabbd7.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/dojo/static/media/DeadStock.d548aaab.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7973ee9c.js",
+    "static/css/2.31461e4f.chunk.css",
+    "static/js/2.72aabbd7.chunk.js",
+    "static/css/main.61872e4e.chunk.css",
+    "static/js/main.69886d05.chunk.js"
+  ]
+}
