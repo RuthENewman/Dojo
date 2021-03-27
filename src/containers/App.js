@@ -4,6 +4,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import NoFightersFound from '../components/NoFightersFound';
+import ErrorBoundary from '../components/ErrorBoundary';
 import { fighters } from '../fighters';
 import './App.css';
 // import { render } from '@testing-library/react';
@@ -50,7 +51,9 @@ class App extends Component {
                     <Header />
                     <SearchBox searchChange={this.onSearchChange}/>
                 <Scroll>
-                    <CardList fighters={filteredFighters} />
+                    <ErrorBoundary>
+                        <CardList fighters={filteredFighters} />
+                    </ErrorBoundary>
                 </Scroll>
                 </div>
             )
