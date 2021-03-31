@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
@@ -10,35 +10,35 @@ import './App.css';
 // import { render } from '@testing-library/react';
 
 
-class App extends Component {
-    constructor() {
-        super();
+function App(){
+    // constructor() {
+    //     super();
         
-        this.state = {
-            fighters: [],
-            searchField: ''
-        }
-    }
+    //     this.state = {
+    //         fighters: [],
+    //         searchField: ''
+    //     }
+    // }
 
-    componentDidMount() {
-        // TODO fetch from fighters API 
-        this.setState({ fighters: fighters });
-    }
+    // componentDidMount() {
+    //     // TODO fetch from fighters API 
+    //     this.setState({ fighters: fighters });
+    // }
 
-    onSearchChange = (event) => {
+    const onSearchChange = (event) => {
         this.setState({ searchField: event.target.value });
     }
 
-    render() {
-        const { fighters, searchField } = this.state;
-        const filteredFighters = fighters.filter((fighter) => {
-            return fighter.name.toLowerCase().includes(searchField.toLowerCase());
+
+    const { fighters, searchField } = this.state;
+    const filteredFighters = fighters.filter((fighter) => {
+        return fighter.name.toLowerCase().includes(searchField.toLowerCase());
         });
-        if (!fighters.length) {
-            return <h2>Loading...</h2>
-        }
-        if (!filteredFighters.length) {
-            return (
+    if (!fighters.length) {
+        return <h2>Loading...</h2>
+    }
+    if (!filteredFighters.length) {
+        return (
                 <div className="tc">
                     <Header />
                     <SearchBox searchChange={this.onSearchChange}/>
@@ -58,7 +58,6 @@ class App extends Component {
                 </div>
             )
         }
-    }
 }
 
 export default App;
